@@ -2,7 +2,7 @@
 
 //$access_token = "0iUcdcZOrWfzqmAsJvL+4w71v+DKgg+a+QKnZZuu4kO02zRaG03ei2FS1VUgz5M8C0ip/IwOQC7HQMZTHche5CpJUWaxvHjnVH9/uCNcmgvxBbBmLU4zLZ9fg1CQbRCdXPxWN/zGwm48V83918r2kwdB04t89/1O/w1cDnyilFU=";
 //$access_token = "Q5JtYUSsKcDOw2qt1WBLFe7pAv+lq1HH1TpkokYfhc5SSk9fUOJxh1ijHkNDq5SKiPjQRsbtrujAG4YyCZK4zecc1a8cfUvJ2bHnDrZ0GBN25DRFJFd7SPJ94CpK7lquMxeGhLAL79jfEpWYh+gPMAdB04t89/1O/w1cDnyilFU=";
-$access_token = "DBSY+rfxqfzGO26aJtKFoVPUqimxWuZ7DZaZX0kpltZVZ+sQrNMG+9qb1KjELbqXr/rvJb9LbH+xbUbP7KRMlW0ucrd0vFF4Nz7238rB59CUFKmFLT7Q1dplgAjBf1704K9jA9gLkdFVSscHcKKZqwdB04t89/1O/w1cDnyilFU=";
+$access_token = "RNiI64Nz6IIxxyyD0hc83r1gNUHEIHONHa3no3s0Eo+xMs2ftaA9d758TQE6Iy06guYt+yo3x5Fhb3ETuWyjmtG3JLGppnC/H3ZamCLLtvTpcew+D9f39TEbPvEVOuV4WFxeH13sk4okTFsTHHCjEwdB04t89/1O/w1cDnyilFU=";
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
@@ -16,7 +16,7 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = "";
 			$msg = $event['message']['text'];
-			//$text = "User ID is : ".$event['source']['userId'] ."Group Id : ".$event['source']['groupId'];
+			$text = "User ID is : ".$event['source']['userId'] ."Group Id : ".$event['source']['groupId'];
 			
 			
 			//print_r($event);
